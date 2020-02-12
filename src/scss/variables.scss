@@ -1,0 +1,7 @@
+@import "~bulma/sass/utilities/_all";
+$teal: #145e75;
+
+$primary: $teal;
+$primary-invert: findColorInvert($primary);
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
