@@ -1,24 +1,19 @@
 <template>
   <div id="app">
     <Banner/>
-      <Lorem/>
-      <Lorem/>
-      <Lorem/>
-      <Code/>
+    <Content/>
   </div>
 </template>
 
 <script>
-import Banner from './Banner.vue'
-import Lorem from './Lorem.vue'
-import Code from './Code.vue'
+import Banner from './banner/Banner.vue'
+import Content from './content/Content.vue'
 
 export default {
   name: 'Index',
   components: {
     Banner,
-    Lorem,
-    Code
+    Content
   }
 }
 </script>

@@ -1,5 +1,5 @@
 // Import Bulma's core
-@import "./variables.scss";
+@import "variables.scss";
 
 $colors: (
     "white": ($white, $black),
@@ -13,11 +13,6 @@ $colors: (
     "danger": ($danger, $danger-invert)
 );
 
-/*
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
-*/
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,3 +22,8 @@ $link-focus-border: $primary;
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+@import "bulma-ribbon.sass";
+
+.has-centered-content {
+  justify-content: center;
+}
