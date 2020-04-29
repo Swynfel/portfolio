@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="education" class="section">
     <div class="container">
       <h1 class="title has-text-centered"><b-icon pack="fas" icon="graduation-cap" size="is-medium" custom-size="null"/> Education</h1>
 

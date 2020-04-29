@@ -17,3 +17,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.section {
+  padding-bottom: 1em;
+}
+</style>

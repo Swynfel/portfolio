@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="contact" class="section">
     <div class="container">
       <h1 class="title has-text-centered">Want to contact me?</h1>
       <br/>

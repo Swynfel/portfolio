@@ -3,6 +3,8 @@
     <Education/>
     <Projects/>
     <Footer/>
+    <section class="section">
+    </section>
   </div>
 </template>
 

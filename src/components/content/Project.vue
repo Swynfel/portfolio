@@ -1,6 +1,6 @@
 <template>
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" :style="show() ? '' : 'display: none;'">
-    <div class="card has-ribbon">
+    <div class="card project-card has-ribbon-left">
       <div class="ribbon">
         <b-taglist>
           <b-tag type="is-primary" v-for="(tag, index) in tags" :key="index">{{ tag }}</b-tag>
@@ -11,7 +11,7 @@
           <img :src='img' alt="Project image">
         </figure>
       </div>
-      <div class="card-content project-card">
+      <div class="card-content">
         <p class="title is-4">
           {{ title }}
         </p>
@@ -57,12 +57,22 @@ export default {
 
 <style lang="scss">
 .project-card {
-  padding: 1em;
-  height: 7.2em;
-  overflow: hidden;
+  .card-image {
+    .image {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
 
-  .title {
-    font-stretch: condensed;
+  .card-content {
+    padding: 1em;
+    height: 7.2em;
+    overflow: hidden;
+
+    .title {
+      font-stretch: condensed;
+    }
   }
 }
 </style>

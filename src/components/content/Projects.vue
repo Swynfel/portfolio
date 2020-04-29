@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="projects" class="section">
     <div class="container">
       <h1 class="title has-text-centered"><b-icon pack="fas" icon="code" size="is-medium" custom-size="null"/> Coding proficiencies</h1>
 
@@ -26,24 +26,32 @@
         </Project>
         <Project :tags="['Rust']"
           title="Catan implementation"
-          subtitle="Optimised minimal environment for Machine Learning"
+          subtitle="Python module containing minimal environment for Machine Learning"
+          img="/rustcatan.jpg"
           >
         </Project>
         <Project :tags="['C++', 'C#', 'Unreal Engine']"
           title="Internship @Optimystic Labs"
-          subtitle="Multilayer AI prototype for project KEA">
+          subtitle="Multilayer AI prototype for project KEA"
+          >
         </Project>
         <Project :tags="['C#', 'Unity']"
           title="What did you say Captain?"
-          subtitle="Text-based space shooter for the Ludum Dare #45">
+          subtitle="Text-based space shooter for the Ludum Dare #45"
+          img="https://static.jam.vg/raw/b69/1/z/13793.png"
+          >
         </Project>
         <Project :tags="['HTML/CSS', 'Python', 'Django']"
           title="Website for RRX event"
-          subtitle="Registration and group finding for large tabletop role playing event">
+          subtitle="Registration and group finding for large tabletop role playing event"
+          img="/faerix.jpg"
+          >
         </Project>
         <Project :tags="['HTML/CSS', 'JavaScript', 'Vue']"
           title="This very website"
-          subtitle="Made with the frameworks Vue (JavaScript) and Bulma (CSS)">
+          subtitle="Made with Vue (JavaScript) and Bulma (CSS) frameworks"
+          img="/website.jpg"
+          >
         </Project>
       </div>
     </div>
