@@ -1,13 +1,20 @@
 @import "~bulma/sass/utilities/_all";
 $teal: #145e75;
-$red: #ee0000;
+$lime: #72c455;
+$lila: #642b60;
+$aqua: #139999;
 
 $primary: $teal;
 $primary-invert: findColorInvert($primary);
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 
-$link: $primary;
+$info: $aqua;
+$info-invert: findColorInvert($info);
+$info-light: findLightColor($info);
+$pinfo-dark: findDarkColor($info);
+
+$link: $aqua;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 

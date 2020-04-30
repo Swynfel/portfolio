@@ -7,7 +7,7 @@
 
       <div class="buttons is-centered">
         <b-button
-          :type="has_all() ? 'is-primary' : 'is-light'"
+          :type="has_all() ? 'is-primary' : has_any() ? 'is-info' : 'is-light'"
           @click="toggle_all"
           >All</b-button>
         <b-button
@@ -19,35 +19,41 @@
       </div>
 
       <div class="columns is-multiline">
-        <Project :tags="['Python', 'Tensorflow']" :selected="selected"
+        <Project :tags="['Python', 'Tensorflow']"
+          :selected='selected'
           title="Master Thesis"
           subtitle="AI for playing the board game Catan using Multiagent RL"
           >
         </Project>
         <Project :tags="['Rust']"
+          :selected='selected'
           title="Catan implementation"
           subtitle="Python module containing minimal environment for Machine Learning"
           img="/rustcatan.jpg"
           >
         </Project>
         <Project :tags="['C++', 'C#', 'Unreal Engine']"
+          :selected='selected'
           title="Internship @Optimystic Labs"
           subtitle="Multilayer AI prototype for project KEA"
           >
         </Project>
         <Project :tags="['C#', 'Unity']"
+          :selected='selected'
           title="What did you say Captain?"
           subtitle="Text-based space shooter for the Ludum Dare #45"
           img="https://static.jam.vg/raw/b69/1/z/13793.png"
           >
         </Project>
         <Project :tags="['HTML/CSS', 'Python', 'Django']"
+          :selected='selected'
           title="Website for RRX event"
           subtitle="Registration and group finding for large tabletop role playing event"
           img="/faerix.jpg"
           >
         </Project>
         <Project :tags="['HTML/CSS', 'JavaScript', 'Vue']"
+          :selected='selected'
           title="This very website"
           subtitle="Made with Vue (JavaScript) and Bulma (CSS) frameworks"
           img="/website.jpg"
@@ -93,6 +99,9 @@
       },
       has_all() {
         return this.selected.length == this.languages.length;
+      },
+      has_any() {
+        return this.selected.length > 0;
       },
       toggle(name) {
         const index = this.selected.indexOf(name);
