@@ -1,16 +1,13 @@
 <template>
-  <b-navbar fixed-top=true>
-    <!--b-navbar-item tag="router-link" :to="{ path: '/' }">
-      <h1>Swynfel</h1>
-    </b-navbar-item>
-    <b-navbar-item tag="router-link" :to="{ path: '/about' }">
+  <b-navbar fixed-top=true type="is-primary" transparent=true>
+    <!--b-navbar-item tag="router-link" :to="{ path: '/about' }">
         About
     </b-navbar-item>
     <b-navbar-item tag="router-link" :to="{ path: '/contact' }">
         Contact
     </b-navbar-item-->
     <template slot="brand">
-      <b-navbar-item href="#">
+      <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <h1>Swynfel</h1>
       </b-navbar-item>
     </template>

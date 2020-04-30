@@ -20,8 +20,8 @@
           <b-tab-item label="Education"></b-tab-item>
           <b-tab-item label="Experience"></b-tab-item>
           <b-tab-item label="Coding Skills"></b-tab-item>
-      </b-tabs>
-    </div-->
+      </b-tabs-->
+    </div>
   </section>
 </template>
 
@@ -45,7 +45,7 @@ export default {
   }
 }
 </script>
-
+<!--
 <style lang="scss" scoped>
 .b-tabs .tab-content {
   padding: 0;
@@ -63,3 +63,4 @@ export default {
   opacity: 0.6;
 }
 </style>
+-->

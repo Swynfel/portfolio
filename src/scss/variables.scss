@@ -1,5 +1,6 @@
 @import "~bulma/sass/utilities/_all";
 $teal: #145e75;
+$red: #ee0000;
 
 $primary: $teal;
 $primary-invert: findColorInvert($primary);
@@ -13,3 +14,15 @@ $link-focus-border: $primary;
 $fullhd: $widescreen;
 
 $section-padding: 5em 1.5em;
+$navbar-burger-color: $white;
+$navbar-breakpoint: $tablet;
+
+/*
+$navbar-dropdown-boxed-shadow: 0;
+$navbar-box-shadow-color: $red;
+
+$navbar-box-shadow-size: 0 0 0 0;
+$background: $red;
+$navbar-item-hover-color: $red;
+$navbar-background-color: $red;
+*/
