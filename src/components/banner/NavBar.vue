@@ -1,5 +1,5 @@
 <template>
-  <b-navbar fixed-top type="is-primary" transparent>
+  <b-navbar fixed-top type="is-primary">
     <!--b-navbar-item tag="router-link" :to="{ path: '/about' }">
         About
     </b-navbar-item>
@@ -24,23 +24,22 @@
       <b-navbar-item href="#contact">
         Contact
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/en' }">
-        <span class="flag-icon flag-icon-gb"></span>
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/fr' }">
-        <span class="flag-icon flag-icon-fr"></span>
-      </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/jp' }">
-        <span class="flag-icon flag-icon-jp"></span>
-      </b-navbar-item>
+    </template>
+    <template slot="end">
+      <LanguageDropdown/>
     </template>
   </b-navbar>
 </template>
 
 
 <script>
+import LanguageDropdown from './LanguageDropdown.vue'
+
 export default {
-  name: 'NavBar'
+  name: 'NavBar',
+  components: {
+    LanguageDropdown
+  }
 }
 </script>
 

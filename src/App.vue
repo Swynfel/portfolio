@@ -7,7 +7,17 @@
 </template>
 
 <script>
+const customIconConfig = {
+  customIconPacks: {
+    'flag-icon': {
+      iconPrefix: 'flag-icon-'
+    }
+  }
+}
 export default {
-  name: 'App'
+  name: 'App',
+  created() {
+    this.$buefy.config.setOptions(customIconConfig)
+  }
 }
 </script>
