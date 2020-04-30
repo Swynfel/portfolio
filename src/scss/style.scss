@@ -1,0 +1,12 @@
+@import 'buefy.scss';
+@import 'icons.scss';
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.has-centered-content {
+  justify-content: center;
+}

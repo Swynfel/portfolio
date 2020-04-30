@@ -1,5 +1,5 @@
 <template>
-  <b-navbar fixed-top=true type="is-primary" transparent=true>
+  <b-navbar fixed-top type="is-primary" transparent>
     <!--b-navbar-item tag="router-link" :to="{ path: '/about' }">
         About
     </b-navbar-item>
@@ -7,9 +7,12 @@
         Contact
     </b-navbar-item-->
     <template slot="brand">
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
+      <b-navbar-item href="#top">
         <h1>Swynfel</h1>
       </b-navbar-item>
+      <!--b-navbar-item tag="router-link" :to="{ path: '' }">
+        <h1>Swynfel</h1>
+      </b-navbar-item-->
     </template>
     <template slot="start">
       <b-navbar-item href="#education">
@@ -20,6 +23,15 @@
       </b-navbar-item>
       <b-navbar-item href="#contact">
         Contact
+      </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/en' }">
+        <span class="flag-icon flag-icon-gb"></span>
+      </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/fr' }">
+        <span class="flag-icon flag-icon-fr"></span>
+      </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/jp' }">
+        <span class="flag-icon flag-icon-jp"></span>
       </b-navbar-item>
     </template>
   </b-navbar>

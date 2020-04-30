@@ -6,8 +6,8 @@
 
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h4 class="subtitle is-4">
-          Hello! I am <b class="title is-3">Quentin Gendre</b> aka <b class="title is-3">Swynfel</b>,
+        <h4 class="subtitle is4">
+          {{ $t(`hello`) }}! I am <b class="title is-3">Quentin Gendre</b> aka <b class="title is-3">Swynfel</b>,
         </h4>
         <div class="columns is-centered is-size-5" style="padding-left: 1em; padding-right: 1em;">
           <div class="column is-narrow is-flex has-centered-content" style="padding-bottom: 0;">
