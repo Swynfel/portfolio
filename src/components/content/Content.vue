@@ -1,7 +1,7 @@
 <template>
   <div id="body">
     <Education/>
-    <Projects/>
+    <Code/>
     <Footer/>
     <section class="section">
     </section>
@@ -10,14 +10,14 @@
 
 <script>
 import Education from './Education.vue'
-import Projects from './Projects.vue'
+import Code from './Code.vue'
 import Footer from './Footer.vue'
 
 export default {
   name: 'Index',
   components: {
     Education,
-    Projects,
+    Code,
     Footer,
   }
 }

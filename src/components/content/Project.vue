@@ -3,7 +3,7 @@
     <div class="card project-card has-ribbon-left">
       <div class="ribbon">
         <b-taglist>
-          <b-tag v-for="(tag, index) in tags" :key="index" :type="tag_selected(tag) ? 'is-primary' : 'is-info'" :style="tag_selected(tag) ? 'font-weight: bold;' : ''">{{ tag }}</b-tag>
+          <b-tag v-for="(tag, index) in tags" :key="index" :type="tag_primary(tag) ? 'is-primary' : 'is-info'" :style="tag_primary(tag) ? 'font-weight: bold;' : ''">{{ tag_name(tag) }}</b-tag>
         </b-taglist>
       </div>
       <div class="card-image">
@@ -31,8 +31,8 @@ export default {
       default: function() { return []; },
     },
     selected: {
-      type: Array,
-      default: function() { return this.tags; },
+      type: String,
+      default: function() { return ''; },
     },
     img: {
       type: String,
@@ -49,17 +49,18 @@ export default {
   },
   methods: {
     show() {
-      var r = false;
-      this.selected.forEach((key) => {
-        if (this.tags.includes(key)) {
-          r = true;
-        }
-      });
-      return r;
+      return this.selected === '' || this.tags.includes(this.selected)
     },
-    tag_selected(tag) {
-      return this.selected.includes(tag);
+    tag_primary(tag) {
+      return tag.charAt(0) !== '*'; //this.selected.includes(tag);
     },
+    tag_name(tag) {
+      if(this.tag_primary(tag)) {
+        return tag;
+      } else {
+        return tag.substr(1);
+      }
+    }
   }
 }
 </script>

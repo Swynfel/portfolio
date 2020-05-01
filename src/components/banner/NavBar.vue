@@ -18,8 +18,8 @@
       <b-navbar-item href="#education">
         Education
       </b-navbar-item>
-      <b-navbar-item href="#projects">
-        Projects
+      <b-navbar-item href="#code">
+        Code
       </b-navbar-item>
       <b-navbar-item href="#contact">
         Contact

@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import Buefy from 'buefy'
+Vue.use(Buefy)
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
+
 import './scss/style.scss'
-import App from './App.vue'
+
 import router from './router'
 import i18n from './i18n.js'
 
-Vue.use(Buefy)
+import App from './App.vue'
 
 new Vue({
   el: "#app",
