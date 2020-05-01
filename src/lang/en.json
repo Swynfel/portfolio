@@ -1,3 +1,16 @@
 {
-  "hello": "Hello"
+  "greetings-start": "Hello! I am ",
+  "greetings-middle": " aka ",
+  "greetings-end": ",",
+  "I like": "I like",
+  "developping video games": "Developping video games",
+  "artificial intelligence": "Artificial Intelligence",
+  "open source software": "Open source software",
+  "baking cakes": "Baking cakes",
+  "utokyo-title": "University of Tokyo - Japan",
+  "utokyo-subtitle": "2018-2020 (expected) Master of Applied Computer Science",
+  "utokyo-comment": "Developped an AI to play the board game Catan with Deep Reinforcement Learning",
+  "x-title": "École Polytechnique - France",
+  "x-subtitle": "2015-2018 Diplôme d'Ingénieur Polytechnicien (Equivalent to Master of Science)",
+  "x-comment": "Learned the theoretical foundations of Pure and Applied Mathematics, Physics, Economy and Computer Science"
 }

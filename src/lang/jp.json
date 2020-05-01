@@ -1,3 +1,10 @@
 {
-  "hello": "こんにちは"
+  "greetings-start": "こんにちわ！",
+  "greetings-middle": "・",
+  "greetings-end": "で、",
+  "I like": "好きなものは",
+  "developping video games": "ビデオゲームを作ること",
+  "artificial intelligence": "人工知能",
+  "open source software": "オープンソースソフトウェア",
+  "baking cakes": "ケーキ料理する"
 }

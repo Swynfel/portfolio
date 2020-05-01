@@ -1,3 +1,16 @@
 {
-  "hello": "Bonjour"
+  "greetings-start": "Bonjour ! Je suis ",
+  "greetings-middle": " alias ",
+  "greetings-end": ",",
+  "I like": "J'aime",
+  "developping video games": "Developper des jeux vidéos",
+  "artificial intelligence": "l'Intelligence Artificielle",
+  "open source software": "les logiciels Open Source",
+  "baking cakes": "Cuisiner des gâteaux",
+  "utokyo-title": "Université de Tokyo - Japon",
+  "utokyo-subtitle": "2018-2020 (prévu) Master d'Informatique Appliqué",
+  "utokyo-comment": "Recherche en IA et Reinforcement Learning sur le jeu de plateau Catane",
+  "x-title": "École polytechnique - France",
+  "x-subtitle": "2015-2018 Diplôme d'Ingénieur Polytechnicien",
+  "x-comment": "Foundations théoriques en Mathématiques pures et appliqués, Physiques, Économie et Informatique"
 }

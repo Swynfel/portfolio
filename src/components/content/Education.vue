@@ -12,9 +12,9 @@
           </figure>
         </div>
         <div class="column is-8">
-          <h4 class="title is-4">University of Tokyo - Japan</h4>
-          <h5 class="subtitle is-5">2018-2020 (expected) Master of Applied Computer Science</h5>
-          Developped an AI to play the board game Catan with Deep Reinforcement Learning
+          <h4 class="title is-4">{{ $t( `utokyo-title` ) }}</h4>
+          <h5 class="subtitle is-5">{{ $t( `utokyo-subtitle` ) }}</h5>
+          {{ $t( `utokyo-comment` ) }}
         </div>
       </div>
 
@@ -27,9 +27,9 @@
           </figure>
         </div>
         <div class="column is-8">
-          <h4 class="title is-4">École Polytechnique - France</h4>
-          <h5 class="subtitle is-5">2015-2018 Diplôme d'Ingénieur Polytechnicien (Equivalent to Master of Science)</h5>
-          Learned the theoretical foundations of Pure and Applied Mathematics, Physics, Economy and Computer Science
+          <h4 class="title is-4">{{ $t( `x-title` ) }}</h4>
+          <h5 class="subtitle is-5">{{ $t( `x-subtitle` ) }}</h5>
+          {{ $t( `x-comment` ) }}
         </div>
       </div>
     </div>
