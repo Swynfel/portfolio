@@ -7,7 +7,7 @@
         Contact
     </b-navbar-item-->
     <template slot="brand">
-      <b-navbar-item href="#top">
+      <b-navbar-item v-scroll-to="{ el: '#top', offset: -200 }">
         <h1>Swynfel</h1>
       </b-navbar-item>
       <!--b-navbar-item tag="router-link" :to="{ path: '' }">
@@ -15,13 +15,13 @@
       </b-navbar-item-->
     </template>
     <template slot="start">
-      <b-navbar-item href="#education">
+      <b-navbar-item v-scroll-to="'#education'">
         Education
       </b-navbar-item>
-      <b-navbar-item href="#code">
+      <b-navbar-item v-scroll-to="'#code'">
         Code
       </b-navbar-item>
-      <b-navbar-item href="#contact">
+      <b-navbar-item v-scroll-to="'#contact'">
         Contact
       </b-navbar-item>
     </template>

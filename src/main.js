@@ -2,7 +2,11 @@ import Vue from 'vue'
 import Buefy from 'buefy'
 Vue.use(Buefy)
 import VueScrollTo from 'vue-scrollto'
-Vue.use(VueScrollTo)
+Vue.use(VueScrollTo, {
+    offset: -50,
+})
+import Translate from './components/Translate.vue'
+Vue.component('t', Translate)
 
 import './scss/style.scss'
 
@@ -17,3 +21,4 @@ new Vue({
   i18n,
   render: h => h(App),
 })
+window.document.title = "Quentin Gendre / Swynfel"

@@ -13,7 +13,7 @@
           <div class="column is-narrow is-flex has-centered-content" style="padding-bottom: 0;">
             {{ $t(`I like`) }}
           </div>
-          <div class="column is-centered is-10-mobile is-4-desktop is-5-tablet is-offset-0-tablet is-offset-1-mobile">
+          <div class="column is-centered is-11-mobile is-4-desktop is-5-tablet is-offset-0-tablet is-offset-1-mobile">
             <ul class="has-text-left">
               <li><b-icon icon="gamepad" type="is-info"/> {{ $t(`developping video games`) }}</li>
               <li><b-icon icon="brain" type="is-info"/> {{ $t(`artificial intelligence`) }}</li>

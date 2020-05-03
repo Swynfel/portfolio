@@ -41,9 +41,37 @@
         <Project :tags="['C#', '*Unity']"
           :selected='selected'
           title="What did you say Captain?"
-          subtitle="Text-based space shooter for the Ludum Dare #45"
+          subtitle="Text-based space shooter for the Ludum Dare #41"
           img="https://static.jam.vg/raw/b69/1/z/13793.png"
           >
+          <t lang="en+jp">
+            <p>
+              A Text-based space shooter in C# using the Unity game engine. <br/>
+              It was made with a friend for the Ludum Dare #41 game jam, a competition where you need to make a game from scratch in 72 hours.
+            </p>
+            We scored rather high, out of 2018, "What did you say Captain?" arrived:
+            <ul>
+              <li>148th in Overall</li>
+              <li>165th in Innovation</li>
+              <li>90th in Theme</li>
+            </ul>
+            Link to entry: <a>https://ldjam.com/events/ludum-dare/41/what-did-you-say-captain</a>
+            Link to source code: <a>https://github.com/AdrienMarcenat/LudumDare41</a>
+          </t>
+          <t lang="fr">
+            <p>
+              Un space shooter textuel en C# using le moteur de jeu Unity. <br/>
+              Il a été réalisé avec un ami pour le Ludum Dare #41, une compétition où il faut faire un jeu en partant de zero en 72 heures.
+            </p>
+            Nous avons obtenu un bon score, sur 2018, "What did you say Captain?" est arrivé:
+            <ul>
+              <li>148ème en Général</li>
+              <li>165ème en Innovation</li>
+              <li>90ème en Thème</li>
+            </ul>
+            Lien vers la compétition: <a>https://ldjam.com/events/ludum-dare/41/what-did-you-say-captain</a>
+            Lien vers le code source: <a>https://github.com/AdrienMarcenat/LudumDare41</a>
+          </t>
         </Project>
         <Project :tags="['HTML/CSS', 'Python', '*Django']"
           :selected='selected'
