@@ -1,3 +1,4 @@
+$tablet: 721px;
 @import "~bulma/sass/utilities/_all";
 
 $teal: #145e75;
@@ -37,3 +38,6 @@ $navbar-padding-horizontal: 0;
 
 $table-background-color: $ashes;
 $background-color: $ashes;
+
+$table-cell-padding: 0.5em 0.5em;
+$tablet: 721px;

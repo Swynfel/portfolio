@@ -118,7 +118,7 @@ img.image-cover {
 
   .card-content {
     padding: 1em;
-    height: 7.2em;
+    min-height: 7.2em;
     overflow: hidden;
 
     .title {

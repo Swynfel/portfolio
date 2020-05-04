@@ -8,22 +8,29 @@
       <b-table :data='data'>
         <template slot-scope="props">
           <b-table-column field="period" width=160 :label="$t(`period`)" centered>
+            <div v-if="!isCard">
               {{ props.row.period }}
               <br/>
               <small>{{ props.row.from }} - {{ props.row.to }}</small>
+            </div>
+            <div v-if="isCard">
+              {{ props.row.period }} ({{ props.row.from }} - {{ props.row.to }})
+            </div>
           </b-table-column>
           <b-table-column field="description" :label="$t(`description`)">
-              {{ props.row.description }}
+            {{ props.row.description }}
           </b-table-column>
-          <b-table-column field="at" width=180 :label="$t(`at`)">
-              {{ props.row.at }}
-              <br/>
-              {{ props.row.at2 }}
+          <b-table-column field="at" width=170 :label="$t(`at`)">
+            {{ props.row.at }}
+            <br v-if="!isCard"/>
+            {{ props.row.at2 }}
           </b-table-column>
           <b-table-column field="location" width=120 :label="$t(`location`)">
+            <div>
               {{ props.row.city }},
-              <br/>
+              <br v-if="!isCard"/>
               <b-icon :icon='props.row.flag' pack="flag-icon" custom-size="is-size-5"/> {{ props.row.country }}
+            </div>
           </b-table-column>
         </template>
       </b-table>
@@ -33,6 +40,9 @@
 
 <script>
   export default {
+    data() {
+      return { 'innerWidth': window.innerWidth }
+    },
     computed: {
       data() {
         const lang = this.$i18n.locale;
@@ -51,7 +61,7 @@
               'description': "Stage d'assitant de professeur - A donné des cours de soutient et a aidé les professeurs pendant les travaux pratiques",
               'at': 'SJTU-ParisTech,','at2': 'Shanghai JiaoTong', 'city': 'Shanghai', 'flag': 'cn', 'country': 'Chine' },
             { 'period': '4 ans', 'from': 'Sep 2005', 'to': 'Aug 2009',
-              'description': "A vécu et étudié à l'étrangé pendant l'enfance",
+              'description': "A vécu et étudié à l'étranger pendant l'enfance",
               'city': 'Göteborg', 'flag': 'se', 'country': 'Suède' },
           ]
         } else {
@@ -77,7 +87,15 @@
               'city': 'Gothenburg', 'flag': 'se', 'country': 'Sweden' },
           ]
         }
+      },
+      isCard() {
+        return this.innerWidth < 721
       }
-    }
+    },
+    mounted() {
+      window.addEventListener('resize', () => {
+        this.innerWidth = window.innerWidth
+      })
+    },
   }
 </script>
