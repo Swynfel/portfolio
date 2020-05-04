@@ -4,6 +4,7 @@ $teal: #145e75;
 $lime: #72c455;
 $lila: #642b60;
 $aqua: #139999;
+$ashes: hsl(0, 0%, 96%);
 
 $primary: $teal;
 $primary-invert: findColorInvert($primary);
@@ -33,3 +34,6 @@ $navbar-dropdown-arrow: $aqua;
 $navbar-item-img-max-height: 5rem;
 $navbar-padding-vertical: 0;
 $navbar-padding-horizontal: 0;
+
+$table-background-color: $ashes;
+$background-color: $ashes;

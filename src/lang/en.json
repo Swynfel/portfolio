@@ -1,4 +1,10 @@
 {
+  "education": "Education",
+  "code": "Code",
+  "coding proficiencies": "Coding proficiencies",
+  "experience": "Experience",
+  "international experience": "International Experience",
+  "contact": "Contact",
   "greetings-start": "Hello! I am ",
   "greetings-middle": " aka ",
   "greetings-end": ",",
@@ -12,5 +18,9 @@
   "utokyo-comment": "Developped an AI to play the board game Catan with Deep Reinforcement Learning",
   "x-title": "École Polytechnique - France",
   "x-subtitle": "2015-2018 Diplôme d'Ingénieur Polytechnicien (Equivalent to Master of Science)",
-  "x-comment": "Learned the theoretical foundations of Pure and Applied Mathematics, Physics, Economy and Computer Science"
+  "x-comment": "Learned the theoretical foundations of Pure and Applied Mathematics, Physics, Economy and Computer Science",
+  "period": "Period",
+  "description": "Description",
+  "at": "At",
+  "location": "Location"
 }

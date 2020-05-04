@@ -126,4 +126,8 @@ img.image-cover {
     }
   }
 }
+
+ul ::marker {
+    color: $teal;
+}
 </style>

@@ -1,4 +1,10 @@
 {
+  "education": "Éducation",
+  "code": "Code",
+  "coding proficiencies": "Apptitudes de Code",
+  "experience": "Experience",
+  "international experience": "Experience Internationale",
+  "contact": "Contact",
   "greetings-start": "Bonjour ! Je suis ",
   "greetings-middle": " alias ",
   "greetings-end": ",",
@@ -12,5 +18,9 @@
   "utokyo-comment": "Recherche en IA et Reinforcement Learning sur le jeu de plateau Catane",
   "x-title": "École polytechnique - France",
   "x-subtitle": "2015-2018 Diplôme d'Ingénieur Polytechnicien",
-  "x-comment": "Foundations théoriques en Mathématiques pures et appliqués, Physiques, Économie et Informatique"
+  "x-comment": "Foundations théoriques en Mathématiques pures et appliqués, Physiques, Économie et Informatique",
+  "period": "Période",
+  "description": "Description",
+  "at": "À",
+  "location": "Localisation"
 }

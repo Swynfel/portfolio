@@ -1,7 +1,7 @@
 <template>
   <section id="code" class="section">
     <div class="container">
-      <h1 class="title has-text-centered"><b-icon pack="fas" icon="code" size="is-medium" custom-size="null"/> Coding proficiencies</h1>
+      <h1 class="title has-text-centered"><b-icon pack="fas" icon="code" size="is-medium" custom-size="null"/> {{ $t(`coding proficiencies`) }} </h1>
 
       <br/>
 
@@ -35,7 +35,7 @@
         <Project :tags="['C++', 'C#', '*Unreal Engine']"
           :selected='selected'
           title="Internship @Optimystic Labs"
-          subtitle="Multilayer AI prototype for project KEA"
+          subtitle="Multi-level AI prototype for project KEA"
           >
         </Project>
         <Project :tags="['C#', '*Unity']"
