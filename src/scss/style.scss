@@ -2,7 +2,7 @@
 @import 'icons.scss';
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, 'ＭＳ Ｐゴシック', 'MS PGothic', 'メイリオ', Meiryo, TakaoPGothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,6 +22,10 @@
 
 .section {
   padding-bottom: 1em;
+}
+
+small {
+  font-size: 0.75em;
 }
 
 body {
