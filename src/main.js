@@ -5,8 +5,8 @@ import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo, {
     offset: -50,
 })
-import Translate from './components/Translate.vue'
-Vue.component('t', Translate)
+import Translate from './translate/Translate.js'
+Vue.use(Translate)
 
 import './scss/style.scss'
 
