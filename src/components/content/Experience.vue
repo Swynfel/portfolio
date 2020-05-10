@@ -62,7 +62,7 @@
               'at': 'SJTU-ParisTech,','at2': 'Shanghai JiaoTong', 'city': 'Shanghai', 'flag': 'cn', 'country': 'Chine' },
             { 'period': '4 ans', 'from': 'Sep 2005', 'to': 'Aug 2009',
               'description': "A vécu et étudié à l'étranger pendant l'enfance",
-              'city': 'Göteborg', 'flag': 'se', 'country': 'Suède' },
+              'at': 'ISGR', 'city': 'Göteborg', 'flag': 'se', 'country': 'Suède' },
           ]
         } else if (lang == 'jp') {
           return [
@@ -80,7 +80,7 @@
               'at': 'SJTU-ParisTech,','at2': '上海交通大学', 'city': '上海', 'flag': 'cn', 'country': '中国' },
             { 'period': '４年間', 'from': '２００５年９月', 'to': '２００９年８月',
               'description': 'Lived and studied abroad during childhood',
-              'city': 'ヨーテボリ', 'flag': 'se', 'country': 'スウェーデン' },
+              'at': 'ISGR', 'city': 'ヨーテボリ', 'flag': 'se', 'country': 'スウェーデン' },
           ]
         } else {
           // 'en' or default
@@ -102,7 +102,7 @@
             //   'at': 'École Polytechnique', 'city': 'Paris', 'flag': 'fr', 'country': 'France' },
             { 'period': '4 years', 'from': 'Sep 2005', 'to': 'Aug 2009',
               'description': 'Lived and studied abroad during childhood',
-              'city': 'Gothenburg', 'flag': 'se', 'country': 'Sweden' },
+              'at': 'ISGR', 'city': 'Gothenburg', 'flag': 'se', 'country': 'Sweden' },
           ]
         }
       },

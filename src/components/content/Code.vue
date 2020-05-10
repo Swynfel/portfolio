@@ -224,7 +224,7 @@
               en:`Multiple participations in game jams since 2015`,
               fr:`Nombreuses participations à des game jams depuis 2015`,
           })"
-          img="http://ludumdare.com/compo/wp-content/compo2//542293/46010-shot3-1460940675.png-eq-900-500.jpg"
+          img="/blobs.jpg"
           >
           <T lang="en+jp">
             <p>
