@@ -9,7 +9,7 @@
         <b-button
           :type="selected=='' ? 'is-primary' : 'is-info' "
           @click="select('')"
-          >All</b-button>
+          > {{ $t(`all`) }}</b-button>
         <b-button
           v-for="language in languages"
           :key="language.name"
@@ -29,8 +29,8 @@
               jp:`修士論文`,
           })"
           :subtitle="$T({
-              en:`AI for playing the board game Catan using Multiagent RL`,
-              fr:`IA pour jouer au jeu de plâteau Catane par RL Multiagent`,
+              en:`AI for playing the board game Catan using Multi-agent RL`,
+              fr:`IA pour jouer au jeu de plateau Catane par RL Multi-agent`,
           })"
           img="/master-thesis.jpg"
           >
@@ -39,7 +39,7 @@
               Made AIs using Reinforcement Learning to play board games (especially Catan).
             </p>
             <p>
-              Published a small paper titled "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo" <br/>
+              Published a first paper titled "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo" <br/>
               <IconLink name="Paper" url="id.nii.ac.jp/1001/00199900/" unsecure/> <br/>
             </p>
             <p>
@@ -50,10 +50,10 @@
 
           <T lang="fr">
             <p>
-              Développement d'IAs utilisant du Reinforcement Learning pour jouer à des jeux de plâteau (particulièrement Catane).
+              Développement d'IAs utilisant du Reinforcement Learning pour jouer à des jeux de plateau (particulièrement Catane).
             </p>
             <p>
-              J'ai publié un petit article intitulé "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo", soit "Minimisation de regret contrefactuel pour jouer à Dudo, jeu multijoueur de bluff aux dés" <br/>
+              J'ai publié un premier article intitulé "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo", soit "Minimisation de regret contrefactuel pour jouer à Dudo, jeu multijoueur de bluff aux dés" <br/>
               <IconLink name="Article" url="id.nii.ac.jp/1001/00199900/" unsecure/> <br/>
             </p>
             <p>
@@ -74,13 +74,13 @@
           })"
           :subtitle="$T({
               en:`RPG game with procedural generation`,
-              fr:`Jeu RPG avec de la generation procédurale`,
+              fr:`Jeu RPG avec de la génération procédurale`,
           })"
           img="/wireless-sun.png"
           >
           <T lang="en+jp">
             <p>
-              An action and exploration RPG vidéo game project, with procedural generation and local multiplayer, made with a friend in our free time.
+              An action and exploration RPG vidéo game project, with procedural generation and local multiplayer, developed with a friend in our free time.
               The game is made in C#, using the open source game engine Godot.
             </p>
             <p>
@@ -96,7 +96,7 @@
             </p>
             <p>
               <IconLink name="Code source" url="github.com/UselessTeam/wireless-sun" unsecure/> <br/>
-              <IconLink name="Executable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
+              <IconLink name="Éxecutable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
             </p>
           </T>
         </Project>
@@ -111,13 +111,13 @@
           })"
           :subtitle="$T({
               en:`Python module containing minimal environment for Machine Learning`,
-              fr:`Module python minimaliste pour de l'apprentissage machine sur Catane`,
+              fr:`Module Python minimaliste pour de l'apprentissage machine sur Catane`,
           })"
           img="/rustcatan.png"
           >
           <T lang="en+jp">
             <p>
-              A implementation of the board game Catan in Rust, and bindings to turn it into a Python module using pyo3.
+              A implementation of the board game Catan in Rust, with bindings to turn it into a Python module using PyO3.
             </p>
             <p>
               The environment supports multithreading and can run without server nor display.
@@ -127,11 +127,11 @@
           </T>
           <T lang="fr">
             <p>
-              Une implémentation du jeu de plâteau Catane en Rust, et les bindings pour en faire un module Python à l'aide de pyo3.
+              Une implémentation du jeu de plateau Catane en Rust, avec des bindings pour en faire un module Python à l'aide de PyO3.
             </p>
             <p>
-              L'environement support le multi-threading et peut tourner sans serveur ni affichage.
-              Étant optimise et minimal, il est très utile pour la recherche en Machine Learning.
+              L'environnement supporte le multi-threading et peut tourner sans serveur ni affichage.
+              Étant optimisé et minimal, il est très utile pour la recherche en Machine Learning.
             </p>
             <IconLink name="Code source (sera public après publication)" url="github.com/swynfel/rust-catan"/> <br/>
           </T>
@@ -153,7 +153,7 @@
           >
           <T lang="en+jp">
             <p>
-              6 month internship at Optimystic Labs / Stormancer as a R&D AI developper.
+              6 month internship at Optimystic Labs / Stormancer as a R&D AI developer.
             </p>
             <p>
               I defined the architecture and implemented a multi-layered AI prototype for project KEA, a cooperative player-vs-computer <b-tooltip label="Multiplayer Online Battle Arena: A genre combining real-time strategy with action-rpg elements" multilined dashed>moba</b-tooltip>-like project of the startup Stormancer.
@@ -163,7 +163,7 @@
           </T>
           <T lang="fr">
             <p>
-              Stage de 6 mois chez Optimystic Labs / Stormancer en tant que developper IA en R&D.
+              Stage de 6 mois chez Optimystic Labs / Stormancer en tant que développeur IA en R&D.
             </p>
             <p>
               J'ai définis l'architecture et implémenté un prototype d'IA multi-niveau pour le projet KEA, un projet de jeu vidéo type-<b-tooltip label="Multiplayer Online Battle Arena: Un genre associant stratégie en temps réelle à des éléments de jeu de role" multilined dashed>moba</b-tooltip> joueur-contre-ordinateur coopératif de la startup Stormancer.
@@ -188,7 +188,7 @@
               A Text-based space shooter in C# using the Unity game engine. <br/>
               It was made with a friend for the 41st Ludum Dare game jam, a competition where you need to make a game from scratch in 72 hours.
             </p>
-            We scored rather high, out of 2018, "What did you say Captain?" arrived:
+            We scored rather high, out of 2018 participants, "What did you say Captain?" arrived:
             <ul>
               <li>148th in Overall</li>
               <li>165th in Innovation</li>
@@ -200,9 +200,9 @@
           <T lang="fr">
             <p>
               Un space shooter textuel en C# utilisant le moteur de jeu Unity. <br/>
-              Il a été réalisé avec un ami pour le 41e Ludum Dare, une compétition où il faut faire un jeu en partant de zero en 72 heures.
+              Il a été réalisé avec un ami pour le 41e Ludum Dare, une compétition où il faut faire un jeu en 72 heures en partant de zéro.
             </p>
-            Nous avons obtenu un bon score, sur 2018, "What did you say Captain?" est arrivé:
+            Nous avons obtenu un bon score, sur 2018 participants, "What did you say Captain?" est arrivé:
             <ul>
               <li>148ème en Général</li>
               <li>165ème en Innovation</li>
@@ -228,11 +228,11 @@
           >
           <T lang="en+jp">
             <p>
-              Participated in multiple multiple Ludum Dare game jams (game making competitions over a weekend), and finished successfully 7 of them. <br/>
-              I have participated in many different conditions, occupying various roles: from alone to a 5 player team, and from sole developper to partial developper with sound-design, level-design and/or graphism responsabilities.
+              Participated in multiple Ludum Dare game jams (game making competitions over a weekend), and finished successfully 7 of them. <br/>
+              I took part under many different conditions, occupying various roles: from alone to a 5 player team, and from sole developer to partial developer with sound-design, level-design and/or graphism responsabilities.
             </p>
             <p>
-              My best "compo" submission, making a game alone in 48h, was "Blobs" for the 35th Ludum Dare. I arrived, out of 1117:
+              My best "compo" submission, making a game alone in 48h, was "Blobs" for the 35th Ludum Dare. Out of 1117 participants, I scored:
               <ul>
                 <li>155th in Overall</li>
                 <li>130th in Fun</li>
@@ -241,7 +241,7 @@
               <IconLink name="Entry" url="ludumdare.com/compo/ludum-dare-35/?uid=46010"/>
             </p>
             <p>
-              My best "jam" submission, making a game in a team in 72h, was "What did you say Captain?" for the 41th Ludum Dare. It has already been discussed <a>here</a>.
+              My best "jam" submission, making a game in a team in 72h, was "What did you say Captain?" for the 41th Ludum Dare. It has already been described <a>here</a>.
             </p>
             <p>
               <IconLink url="ldjam.com/users/swynfel/games">Participations (<b-tooltip label="The Ludum Dare website migrated in 2017" dashed>5 most recent only</b-tooltip>)</IconLink>
@@ -250,10 +250,10 @@
           <T lang="fr">
             <p>
               J'ai participé à de nombreuses "game jams" Ludum Dare (compétition de programmation de jeu sur un weekend), et j'ai terminé 7 jeux. <br/>
-              J'ai essayé de multiples postes dans des conditions variés: allant de seul à en équipe de 5, de seul développeur à developpeur particiel avec des responsabilities de sound-design, level-designer et/ou graphiste.
+              J'ai occupé de multiples postes dans des conditions variés: allant de seul à en équipe de 5, de seul développeur à développeur partiel avec des responsabilités de sound-designer, level-designer et/ou graphiste.
             </p>
             <p>
-              Ma meilleure participation de type "compo", où il faut faire un jeu seul en 48h, a été "Blobs" pour le 35e Ludum Dare. Je suis arrivé, sur 1117:
+              Ma meilleure participation de type "compo", où il faut faire un jeu seul en 48h, a été "Blobs" pour le 35e Ludum Dare. Sur 1117 participants, je suis arrivé:
               <ul>
                 <li>155ème en Général</li>
                 <li>130ème en Fun</li>
@@ -265,7 +265,7 @@
                 Ma meilleure participation de type "jam", où il faut faire un jeu en équipe en 72h, a été "What did you say Captain?" pour le 41e Ludum Dare. Je l'ai déjà mentionné <a>ici</a>.
             </p>
             <p>
-              <IconLink url="ldjam.com/users/swynfel/games">Participations (<b-tooltip label="Le site web du Ludum Dare a été migré en 2017" dashed>5 derniers seulement</b-tooltip>)</IconLink>
+              <IconLink url="ldjam.com/users/swynfel/games">Participations (<b-tooltip label="Le site web du Ludum Dare a été migré en 2017" dashed>5 dernières seulement</b-tooltip>)</IconLink>
             </p>
           </T>
         </Project>
@@ -278,8 +278,8 @@
               jp:`RRXのウェッブサイト`,
           })"
           :subtitle="$T({
-              en:`Registration and group finding for large tabletop role playing event`,
-              fr:`Inscription et recherche de groupe pour un événement de jeu de role`,
+              en:`Registration and group finding for a large tabletop role playing event`,
+              fr:`Inscription et recherche de groupes pour un événement de jeu de rôle`,
           })"
           img="/faerix.jpg"
           >
@@ -289,7 +289,7 @@
             </p>
             <p>
               It handles registration and group finding for about 300 persons each year.
-              The website uses Django, a python framework, as backend. The frontend uses Django's templating system combined with the CSS framework Bootstrap.
+              The website uses Django, a Python framework, as backend. The frontend uses Django's templating system combined with the CSS framework Bootstrap.
             </p>
             <p>
               Main contributor while at school, I continue to help maintaining it.
@@ -299,17 +299,17 @@
           </T>
           <T lang="fr">
             <p>
-              Le site web des "Rencontres Rôlistes de l'X", un événement de jeu de role papier organisé par "Faërix", un club de l'École polytechnique.
+              Le site web des "Rencontres Rôlistes de l'X", un événement de jeu de rôle papier organisé par "Faërix", un club de l'École polytechnique.
             </p>
             <p>
-              Ce site s'occupe des inscriptions et de la recherche de groupe d'environs 300 personnes chaque année.
-              Le site utilise Django, un framework python, comme backend. Le frontend utilise le system de template Django combiné au framework CSS Bootstrap.
+              Ce site s'occupe des inscriptions et de la recherche de groupes pour environ 300 personnes chaque année.
+              Le site utilise Django, un framework Python, comme backend. Le frontend utilise le system de template Django combiné au framework CSS Bootstrap.
             </p>
             <p>
-              Contributeur principale pendant l'école, je continue à aider à le maintenir.
+              Contributeur principal pendant l'école, je continue à aider à le maintenir.
             </p>
             <IconLink name="Site" url="www.faerix.net"/> <br/>
-            <IconLink url="github.com/Faerix/faerix-website"> Code source (<b-tooltip label="le code source actuel est devenu privé pour des raisons de sécurité" multilined dashed>obselète</b-tooltip>) </IconLink><br/>
+            <IconLink url="github.com/Faerix/faerix-website"> Code source (<b-tooltip label="le code source actuel est devenu privé pour des raisons de sécurité" multilined dashed>obsolète</b-tooltip>) </IconLink><br/>
           </T>
         </Project>
 
@@ -322,7 +322,7 @@
               jp:`このウェッブサイト`,
           })"
           :subtitle="$T({
-              en:`Made with the Vue (JavaScript) and Bulma (CSS) frameworks`,
+              en:`Made with the frameworks Vue (JavaScript) and Bulma (CSS)`,
               fr:`Fait avec les frameworks Vue (JavaScript) et Bulma (CSS)`,
           })"
           img="/website.png"

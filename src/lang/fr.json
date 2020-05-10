@@ -1,16 +1,16 @@
 {
   "education": "Éducation",
   "code": "Code",
-  "coding proficiencies": "Apptitudes de Code",
-  "experience": "Experience",
-  "international experience": "Experience Internationale",
+  "coding proficiencies": "Compétences en Code",
+  "experience": "Expérience",
+  "international experience": "Expérience Internationale",
   "contact": "Contact",
   "want contact": "Vous voulez me contacter ?",
   "greetings-start": "Bonjour ! Je suis ",
   "greetings-middle": " alias ",
   "greetings-end": ",",
   "I like": "J'aime",
-  "developping video games": "Developper des jeux vidéos",
+  "developing video games": "Développer des jeux vidéos",
   "artificial intelligence": "l'Intelligence Artificielle",
   "open source software": "les logiciels Open Source",
   "baking cakes": "Cuisiner des gâteaux",
@@ -19,9 +19,10 @@
   "utokyo-comment": "Recherche en IA et Reinforcement Learning sur le jeu de plateau Catane",
   "x-title": "École polytechnique - France",
   "x-subtitle": "2015-2018 Diplôme d'Ingénieur Polytechnicien",
-  "x-comment": "Foundations théoriques en Mathématiques pures et appliqués, Physiques, Économie et Informatique",
+  "x-comment": "Fondations théoriques en Mathématiques pures et appliquées, Physiques, Économie et Informatique",
   "period": "Période",
   "description": "Description",
   "at": "À",
-  "location": "Localisation"
+  "location": "Localisation",
+  "all": "Tout"
 }

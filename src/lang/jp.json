@@ -1,7 +1,7 @@
 {
   "education": "学歴",
   "code": "コード",
-  "coding proficiencies": "コード熟練",
+  "coding proficiencies": "コード能力",
   "experience": "履歴",
   "international experience": "国際的な履歴",
   "contact": "連絡",
@@ -10,7 +10,7 @@
   "greetings-middle": "・",
   "greetings-end": "です",
   "I like": "好きなものは",
-  "developping video games": "ビデオゲームを作ること",
+  "developing video games": "ビデオゲームを作ること",
   "artificial intelligence": "人工知能",
   "open source software": "オープンソースソフトウェア",
   "baking cakes": "ケーキ料理する",
@@ -23,5 +23,6 @@
   "period": "期間",
   "description": "説明",
   "at": "施設",
-  "location": "場所"
+  "location": "場所",
+  "all": "すべて"
 }
