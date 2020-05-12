@@ -43,8 +43,8 @@
               <IconLink name="Paper" url="id.nii.ac.jp/1001/00199900/" unsecure/> <br/>
             </p>
             <p>
-              Currently focusing on the board game Catan, a 4-player strategical game with incomplete information, randomness, and a complexe hexagonal-based board. <br/>
-              I'm looking for ways to play the game using only Deep Reinforcement Learning.
+              I am currently focusing on the board game Catan, a 4-player strategical game with incomplete information, randomness, and a complexe hexagonal-based board. <br/>
+              I am looking for ways to play the game using only Deep Reinforcement Learning.
             </p>
           </T>
 
@@ -53,7 +53,7 @@
               Développement d'IAs utilisant du Reinforcement Learning pour jouer à des jeux de plateau (particulièrement Catane).
             </p>
             <p>
-              J'ai publié un premier article intitulé "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo", soit "Minimisation de regret contrefactuel pour jouer à Dudo, jeu multijoueur de bluff aux dés" <br/>
+              J'ai publié un premier article intitulé "Counterfactual Regret Minimisation for playing the multiplayer bluffing dice game Dudo", soit "Minimisation du regret contrefactuel pour jouer à Dudo, jeu multijoueur de bluff aux dés" <br/>
               <IconLink name="Article" url="id.nii.ac.jp/1001/00199900/" unsecure/> <br/>
             </p>
             <p>
@@ -80,7 +80,7 @@
           >
           <T lang="en+jp">
             <p>
-              An action and exploration RPG vidéo game project, with procedural generation and local multiplayer, developed with a friend in our free time.
+              An action and exploration RPG video game project, with procedural generation and local multiplayer, developed with a friend in our free time.
               The game is made in C#, using the open source game engine Godot.
             </p>
             <p>
@@ -96,7 +96,7 @@
             </p>
             <p>
               <IconLink name="Code source" url="github.com/UselessTeam/wireless-sun" unsecure/> <br/>
-              <IconLink name="Éxecutable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
+              <IconLink name="Exécutable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
             </p>
           </T>
         </Project>
@@ -111,13 +111,13 @@
           })"
           :subtitle="$T({
               en:`Python module containing minimal environment for Machine Learning`,
-              fr:`Module Python minimaliste pour de l'apprentissage machine sur Catane`,
+              fr:`Module Python minimaliste pour l'apprentissage machine sur Catane`,
           })"
           img="/rustcatan.png"
           >
           <T lang="en+jp">
             <p>
-              A implementation of the board game Catan in Rust, with bindings to turn it into a Python module using PyO3.
+              An implementation of the board game Catan in Rust, with bindings to turn it into a Python module using PyO3.
             </p>
             <p>
               The environment supports multithreading and can run without server nor display.
@@ -146,8 +146,8 @@
               jp:`OptymisticLabsのインターンシップ`,
           })"
           :subtitle="$T({
-              en:`Multi-level AI prototype for project KEA`,
-              fr:`Prototype d'IA multi-niveau pour le projet KEA`,
+              en:`Multi-level AI prototype for the indie game project KEA`,
+              fr:`Prototype d'IA multi-niveau pour le projet de jeu indépendant KEA`,
           })"
           img="/kea.jpg"
           >
@@ -166,7 +166,7 @@
               Stage de 6 mois chez Optimystic Labs / Stormancer en tant que développeur IA en R&D.
             </p>
             <p>
-              J'ai définis l'architecture et implémenté un prototype d'IA multi-niveau pour le projet KEA, un projet de jeu vidéo type-<b-tooltip label="Multiplayer Online Battle Arena: Un genre associant stratégie en temps réelle à des éléments de jeu de role" multilined dashed>moba</b-tooltip> joueur-contre-ordinateur coopératif de la startup Stormancer.
+              J'ai défini l'architecture et implémenté un prototype d'IA multi-niveau pour le projet KEA, un projet de jeu vidéo type-<b-tooltip label="Multiplayer Online Battle Arena: Un genre associant stratégie en temps réelle à des éléments de jeu de role" multilined dashed>moba</b-tooltip> joueur-contre-ordinateur coopératif de la startup Stormancer.
             </p>
             <IconLink name="Projet" url="optimysticlabs.com"/> <br/>
             <IconLink name="Entreprise" url="www.stormancer.com"/> <br/>
@@ -188,7 +188,7 @@
               A Text-based space shooter in C# using the Unity game engine. <br/>
               It was made with a friend for the 41st Ludum Dare game jam, a competition where you need to make a game from scratch in 72 hours.
             </p>
-            We scored rather high, out of 2018 participants, "What did you say Captain?" arrived:
+            We scored rather high. Out of 2018 participants, "What did you say Captain?" arrived:
             <ul>
               <li>148th in Overall</li>
               <li>165th in Innovation</li>
@@ -202,7 +202,7 @@
               Un space shooter textuel en C# utilisant le moteur de jeu Unity. <br/>
               Il a été réalisé avec un ami pour le 41e Ludum Dare, une compétition où il faut faire un jeu en 72 heures en partant de zéro.
             </p>
-            Nous avons obtenu un bon score, sur 2018 participants, "What did you say Captain?" est arrivé:
+            Nous avons obtenu un bon score. Sur 2018 participants, "What did you say Captain?" est arrivé :
             <ul>
               <li>148ème en Général</li>
               <li>165ème en Innovation</li>
@@ -249,8 +249,8 @@
           </T>
           <T lang="fr">
             <p>
-              J'ai participé à de nombreuses "game jams" Ludum Dare (compétition de programmation de jeu sur un weekend), et j'ai terminé 7 jeux. <br/>
-              J'ai occupé de multiples postes dans des conditions variés: allant de seul à en équipe de 5, de seul développeur à développeur partiel avec des responsabilités de sound-designer, level-designer et/ou graphiste.
+              J'ai participé à de nombreuses "game jams" Ludum Dare (compétition de programmation de jeux sur un weekend), et j'ai terminé 7 jeux. <br/>
+              J'ai occupé de multiples postes dans des conditions variées: allant de seul à en équipe de 5, de développeur uniquement à développeur partiel avec des responsabilités de sound-designer, level-designer et/ou graphiste.
             </p>
             <p>
               Ma meilleure participation de type "compo", où il faut faire un jeu seul en 48h, a été "Blobs" pour le 35e Ludum Dare. Sur 1117 participants, je suis arrivé:
@@ -306,7 +306,7 @@
               Le site utilise Django, un framework Python, comme backend. Le frontend utilise le system de template Django combiné au framework CSS Bootstrap.
             </p>
             <p>
-              Contributeur principal pendant l'école, je continue à aider à le maintenir.
+              Contributeur principal pendant l'école, je continue à aider à maintenir le site.
             </p>
             <IconLink name="Site" url="www.faerix.net"/> <br/>
             <IconLink url="github.com/Faerix/faerix-website"> Code source (<b-tooltip label="le code source actuel est devenu privé pour des raisons de sécurité" multilined dashed>obsolète</b-tooltip>) </IconLink><br/>
@@ -328,7 +328,7 @@
           img="/website.png"
           >
           <T lang="en+jp">
-            My portfolio website. A single page application made with
+            My portfolio website. A single page application made with:
             <ul>
               <li>Vue - a JavaScript Framework</li>
               <li>Bulma - a CSS Framework</li>
@@ -338,7 +338,7 @@
             <IconLink name="Source code" url="github.com/swynfel/portfolio"/> <br/>
           </T>
           <T lang="fr">
-            Mon site portfolio. Une application web monopage faite avec
+            Mon site portfolio. Une application web monopage faite avec :
             <ul>
               <li>Vue - un framework JavaScript</li>
               <li>Bulma - un framework CSS</li>
