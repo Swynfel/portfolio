@@ -1,6 +1,6 @@
 <template>
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" :style="show() ? '' : 'display: none;'">
-    <a v-on:click="opened = true">
+    <a v-on:click='open'>
       <div class="card project-card has-ribbon-left">
         <div class="ribbon">
           <b-taglist>
@@ -22,7 +22,7 @@
         </div>
       </div>
     </a>
-    <b-modal :active.sync="opened" :width="640" scroll="keep">
+    <b-modal :active="opened == id" :width="640" scroll="keep" @close='close'>
       <div class="card">
         <div class="card-image">
           <figure class="image is-3by2">
@@ -55,6 +55,13 @@
 <script>
 export default {
   props: {
+    id: {
+      type: Number,
+    },
+    opened: {
+      type: Number,
+      default: function() { return -1; },
+    },
     tags: {
       type: Array,
       default: function() { return []; },
@@ -76,9 +83,6 @@ export default {
       default: "SUBTITLE"
     },
   },
-  data () {
-    return { opened: false }
-  },
   methods: {
     show() {
       return this.selected === '' || this.tags.includes(this.selected)
@@ -92,7 +96,13 @@ export default {
       } else {
         return tag.substr(1);
       }
-    }
+    },
+    open() {
+      this.$emit('open', this.id)
+    },
+    close() {
+      this.$emit('open', -1)
+    },
   }
 }
 </script>

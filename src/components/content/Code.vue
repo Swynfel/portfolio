@@ -21,7 +21,10 @@
       <div class="columns is-multiline">
 
         <Project :tags="['Python', '*Tensorflow']"
+          :id=0
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
 
           :title="$T({
               en:`Master Thesis`,
@@ -65,7 +68,10 @@
 
 
         <Project :tags="['C#', '*Godot']"
+          :id=1
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
 
           :title="$T({
               en:`Wireless Sun project`,
@@ -84,8 +90,8 @@
               The game is made in C#, using the open source game engine Godot.
             </p>
             <p>
-              <IconLink name="Source code" url="github.com/UselessTeam/wireless-sun" unsecure/> <br/>
-              <IconLink name="Build (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
+              <IconLink name="Source code" url="github.com/UselessTeam/wireless-sun"/> <br/>
+              <IconLink name="Build (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases"/> <br/>
             </p>
           </T>
 
@@ -95,15 +101,19 @@
               Nous développons en C#, avec le moteur de jeu open source Godot.
             </p>
             <p>
-              <IconLink name="Code source" url="github.com/UselessTeam/wireless-sun" unsecure/> <br/>
-              <IconLink name="Exécutable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases" unsecure/> <br/>
+              <IconLink name="Code source" url="github.com/UselessTeam/wireless-sun"/> <br/>
+              <IconLink name="Exécutable (alpha 0.3)" url="github.com/UselessTeam/wireless-sun/releases"/> <br/>
             </p>
           </T>
         </Project>
 
 
         <Project :tags="['Rust']"
+          :id=2
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           :title="$T({
               en:`Catan implementation`,
               fr:`Implémentation de Catane`,
@@ -139,7 +149,11 @@
 
 
         <Project :tags="['C++', 'C#', '*Unreal Engine']"
+          :id=3
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           :title="$T({
               en:`Internship @Optimystic Labs`,
               fr:`Stage chez Optimystic Labs`,
@@ -175,7 +189,11 @@
 
 
         <Project :tags="['C#', '*Unity']"
+          :id=4
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           title="What did you say Captain?"
           :subtitle="$T({
               en:`Text-based space shooter for the 41th Ludum Dare`,
@@ -214,11 +232,15 @@
         </Project>
 
         <Project :tags="['C#', '*Unity']"
+          :id=5
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           :title="$T({
               en:`7 Ludum Dare participations`,
               fr:`7 Ludum Dare`,
-              jp:`７回LudumDareの参加`,
+              jp:`７回のLudumDare`,
           })"
           :subtitle="$T({
               en:`Multiple participations in game jams since 2015`,
@@ -238,10 +260,10 @@
                 <li>130th in Fun</li>
                 <li>91th in Theme</li>
               </ul>
-              <IconLink name="Entry" url="ludumdare.com/compo/ludum-dare-35/?uid=46010"/>
+              <IconLink name="Entry" url="ludumdare.com/compo/ludum-dare-35/?uid=46010" unsecure/>
             </p>
             <p>
-              My best "jam" submission, making a game in a team in 72h, was "What did you say Captain?" for the 41th Ludum Dare. It has already been described <a>here</a>.
+              My best "jam" submission, making a game in a team in 72h, was "What did you say Captain?" for the 41th Ludum Dare. It has already been described <a @click='opened_modal = 4'>here</a>.
             </p>
             <p>
               <IconLink url="ldjam.com/users/swynfel/games">Participations (<b-tooltip label="The Ludum Dare website migrated in 2017" dashed>5 most recent only</b-tooltip>)</IconLink>
@@ -259,10 +281,10 @@
                 <li>130ème en Fun</li>
                 <li>91ème en Thème</li>
               </ul>
-              <IconLink name="Entry" url="ludumdare.com/compo/ludum-dare-35/?action=preview&uid=46010"/>
+              <IconLink name="Entry" url="ludumdare.com/compo/ludum-dare-35/?uid=46010" unsecure/>
             </p>
             <p>
-                Ma meilleure participation de type "jam", où il faut faire un jeu en équipe en 72h, a été "What did you say Captain?" pour le 41e Ludum Dare. Je l'ai déjà mentionné <a>ici</a>.
+                Ma meilleure participation de type "jam", où il faut faire un jeu en équipe en 72h, a été "What did you say Captain?" pour le 41e Ludum Dare. Je l'ai déjà décrit <a @click='opened_modal = 4'>ici</a>.
             </p>
             <p>
               <IconLink url="ldjam.com/users/swynfel/games">Participations (<b-tooltip label="Le site web du Ludum Dare a été migré en 2017" dashed>5 dernières seulement</b-tooltip>)</IconLink>
@@ -271,7 +293,11 @@
         </Project>
 
         <Project :tags="['HTML/CSS', 'Python', '*Django']"
+          :id=6
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           :title="$T({
               en:`Website for the RRX event`,
               fr:`Site web des RRX`,
@@ -315,7 +341,11 @@
 
 
         <Project :tags="['HTML/CSS', 'JavaScript', '*Vue']"
+          :id=7
           :selected='selected'
+          :opened='opened_modal'
+          @open='open_modal'
+
           :title="$T({
               en:`This very website`,
               fr:`Ce site même`,
@@ -382,12 +412,16 @@
       return {
         languages: languages,
         selected: '',
+        opened_modal: -1,
       }
     },
     methods: {
       select(name) {
         this.selected = name
       },
+      open_modal(id) {
+        this.opened_modal = id
+      }
     }
   }
 </script>
