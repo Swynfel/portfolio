@@ -15,8 +15,9 @@
           </div>
           <div class="column is-centered is-11-mobile is-5-desktop is-7-tablet is-offset-0-tablet is-offset-1-mobile">
             <ul class="has-text-left">
-              <li><b-icon icon="gamepad" type="is-info"/> {{ $t(`developing video games`) }}</li>
+              <li><b-icon icon="lightbulb-on" type="is-info"/> {{ $t(`innovation`) }}</li>
               <li><b-icon icon="brain" type="is-info"/> {{ $t(`artificial intelligence`) }}</li>
+              <li><b-icon icon="gamepad" type="is-info"/> {{ $t(`developing video games`) }}</li>
               <li><b-icon pack="fab" icon="osi" type="is-info" custom-size="is-small"/> {{ $t(`open source software`) }}</li>
               <li><b-icon icon="cupcake" type="is-info"/> {{ $t(`baking cakes`) }}</li>
             </ul>
